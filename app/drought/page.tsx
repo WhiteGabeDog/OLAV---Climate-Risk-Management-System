@@ -414,7 +414,7 @@ const waterManagementActions = [
     priority: "high",
     resources: "12 water trucks deployed",
     startDate: "2024-05-15",
-    estimatedCost: "₱2.5M",
+    estimatedCost: "$2.5M",
     beneficiaries: 45000,
     progress: 75,
     coordinator: "Engr. Maria Santos",
@@ -428,7 +428,7 @@ const waterManagementActions = [
     priority: "medium",
     resources: "Drought-resistant seeds distribution",
     startDate: "2024-05-20",
-    estimatedCost: "₱1.8M",
+    estimatedCost: "$1.8M",
     beneficiaries: 12500,
     progress: 25,
     coordinator: "Dr. Juan Dela Cruz",
@@ -442,7 +442,7 @@ const waterManagementActions = [
     priority: "low",
     resources: "Public awareness program",
     startDate: "2024-05-10",
-    estimatedCost: "₱800K",
+    estimatedCost: "$800K",
     beneficiaries: 2500000,
     progress: 60,
     coordinator: "Ms. Ana Reyes",
@@ -456,7 +456,7 @@ const waterManagementActions = [
     priority: "high",
     resources: "5 drilling rigs, geological survey",
     startDate: "2024-05-25",
-    estimatedCost: "₱15M",
+    estimatedCost: "$15M",
     beneficiaries: 85000,
     progress: 10,
     coordinator: "Engr. Roberto Cruz",
@@ -755,7 +755,7 @@ const reservoirLevelData = [
       "Water Reserves (%)",
       "Population",
       "Vulnerable Population",
-      "Economic Impact (₱B)",
+      "Economic Impact ($B)",
       "Agricultural Impact",
       "Days to Risk",
       "Humidity (%)",
@@ -822,10 +822,10 @@ const reservoirLevelData = [
       "Children Under 5",
       "Households Without Piped Water",
       "Agriculture Dependent Jobs",
-      "Economic Impact (₱B)",
-      "Agriculture Sector Impact (₱B)",
-      "Manufacturing Sector Impact (₱B)",
-      "Services Sector Impact (₱B)",
+      "Economic Impact ($B)",
+      "Agriculture Sector Impact ($B)",
+      "Manufacturing Sector Impact ($B)",
+      "Services Sector Impact ($B)",
       "Agricultural Impact Level",
       "Days to Risk Threshold",
       "Water Demand (ML/day)",
@@ -929,10 +929,10 @@ POPULATION DATA:
 - Children Under 5: ${area.demographics.childrenUnder5.toLocaleString()}
 
 ECONOMIC IMPACT:
-- Total Economic Impact: ₱${area.economicImpact}B
-- Agriculture Sector: ₱${area.economicSectors.agriculture}B
-- Manufacturing Sector: ₱${area.economicSectors.manufacturing}B
-- Services Sector: ₱${area.economicSectors.services}B
+- Total Economic Impact: $${area.economicImpact}B
+- Agriculture Sector: $${area.economicSectors.agriculture}B
+- Manufacturing Sector: $${area.economicSectors.manufacturing}B
+- Services Sector: $${area.economicSectors.services}B
 
 ENVIRONMENTAL CONDITIONS:
 - Humidity: ${area.environmentalData.humidity}%
@@ -1150,7 +1150,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                                   {viewMode === "risk" && `${area.soilMoisture}%`}
                                   {viewMode === "water" && `${area.waterReserves}%`}
                                   {viewMode === "agriculture" && area.agriculturalImpact}
-                                  {viewMode === "economic" && `₱${area.economicImpact}B`}
+                                  {viewMode === "economic" && `$${area.economicImpact}B`}
                                 </div>
                               </div>
                             </div>
@@ -1230,7 +1230,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                         {viewMode === "risk" && "Drought Risk Levels"}
                         {viewMode === "water" && "Water Reserve Status"}
                         {viewMode === "agriculture" && "Agricultural Impact"}
-                        {viewMode === "economic" && "Economic Impact (₱B)"}
+                        {viewMode === "economic" && "Economic Impact ($B)"}
                       </h4>
                       <div className="space-y-1">
                         {viewMode === "risk" &&
@@ -1280,10 +1280,10 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
 
                         {viewMode === "economic" &&
                           [
-                            { level: "Low", color: "bg-green-500", range: "< ₱2B" },
-                            { level: "Moderate", color: "bg-yellow-500", range: "₱2B - ₱5B" },
-                            { level: "High", color: "bg-orange-500", range: "₱5B - ₱10B" },
-                            { level: "Severe", color: "bg-red-500", range: "> ₱10B" },
+                            { level: "Low", color: "bg-green-500", range: "< $2B" },
+                            { level: "Moderate", color: "bg-yellow-500", range: "$2B - $5B" },
+                            { level: "High", color: "bg-orange-500", range: "$5B - $10B" },
+                            { level: "Severe", color: "bg-red-500", range: "> $10B" },
                           ].map((item) => (
                             <div key={item.level} className="flex items-center gap-2 text-xs">
                               <div className={`w-3 h-3 rounded ${item.color}`} />
@@ -1345,7 +1345,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                             <div className="text-xs text-muted-foreground capitalize flex items-center gap-2">
                               <span>{area.vegStress}</span>
                               <span>•</span>
-                              <span>₱{area.economicImpact}B</span>
+                              <span>${area.economicImpact}B</span>
                             </div>
                           </div>
                         </div>
@@ -1416,7 +1416,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                             </div>
                             <div className="flex items-center gap-2">
                               <Target className="h-3 w-3 text-red-500" />
-                              <span>Economic: ₱{selectedRegion.economicImpact}B</span>
+                              <span>Economic: ${selectedRegion.economicImpact}B</span>
                             </div>
                           </div>
 
@@ -1611,7 +1611,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                           </div>
 
                           <div className="space-y-2">
-                            <h5 className="text-xs font-medium">Economic Sectors Impact (₱B)</h5>
+                            <h5 className="text-xs font-medium">Economic Sectors Impact ($B)</h5>
                             <div className="space-y-1">
                               {Object.entries(selectedRegion.economicSectors).map(([sector, impact]) => (
                                 <div key={sector} className="flex items-center justify-between">
@@ -1623,7 +1623,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                                         style={{ width: `${(impact / 6) * 100}%` }}
                                       />
                                     </div>
-                                    <span className="text-xs font-medium">₱{impact}B</span>
+                                    <span className="text-xs font-medium">${impact}B</span>
                                   </div>
                                 </div>
                               ))}
@@ -1927,7 +1927,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                                           </CardHeader>
                                           <CardContent>
                                             <div className="flex justify-between items-center">
-                                                <p className="text-4xl font-bold text-red-500">₱{totalEconomicImpact}B</p>
+                                                <p className="text-4xl font-bold text-red-500">${totalEconomicImpact}B</p>
                                                 <Target className="h-10 w-10 text-orange-500 p-1 bg-orange-100 rounded-full" />
                                             </div>
                                             <div className="text-xs text-gray-400 mt-3">Losses Q3 YTD</div>
@@ -2253,12 +2253,12 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                           </TableCell>
                           <TableCell>
                             <div className="text-sm">
-                              <div className="font-medium text-red-500">₱{area.economicImpact}B</div>
+                              <div className="font-medium text-red-500">${area.economicImpact}B</div>
                               <div className="text-xs text-muted-foreground">
-                                Agri: ₱{area.economicSectors.agriculture}B
+                                Agri: ${area.economicSectors.agriculture}B
                               </div>
                               <div className="text-xs text-muted-foreground">
-                                Mfg: ₱{area.economicSectors.manufacturing}B
+                                Mfg: ${area.economicSectors.manufacturing}B
                               </div>
                             </div>
                           </TableCell>
@@ -2362,7 +2362,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                       M
                     </div>
                     <div>
-                      Total Economic Impact: ₱
+                      Total Economic Impact: $
                       {getFilteredAndSortedData()
                         .reduce((sum, area) => sum + area.economicImpact, 0)
                         .toFixed(1)}
@@ -2420,7 +2420,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                           </div>
                           <div className="flex items-center gap-2">
                             <Progress value={area.soilMoisture} className="flex-1 h-2" />
-                            <span className="text-xs text-muted-foreground w-16">₱{area.economicImpact}B</span>
+                            <span className="text-xs text-muted-foreground w-16">${area.economicImpact}B</span>
                           </div>
                         </div>
                       ))}
@@ -2467,7 +2467,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                   <div className="space-y-3">
                     <div className="text-center p-4 bg-muted/30 rounded">
                       <div className="text-2xl font-bold text-red-500">
-                        ₱{currentDroughtData.reduce((sum, area) => sum + area.economicImpact, 0).toFixed(1)}B
+                        ${currentDroughtData.reduce((sum, area) => sum + area.economicImpact, 0).toFixed(1)}B
                       </div>
                       <div className="text-sm text-muted-foreground">Total Economic Impact</div>
                     </div>
@@ -2479,7 +2479,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                           <div key={area.id} className="flex items-center justify-between text-sm">
                             <span>{area.name}</span>
                             <div className="flex items-center gap-2">
-                              <span className="font-medium">₱{area.economicImpact}B</span>
+                              <span className="font-medium">${area.economicImpact}B</span>
                               <div className="w-16 h-2 bg-muted rounded">
                                 <div
                                   className="h-full bg-red-500 rounded"
@@ -2722,7 +2722,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
 
                                 <div className="grid grid-cols-2 gap-2 text-xs text-muted-foreground">
                                   <div>Water: {forecast.waterReserves}%</div>
-                                  <div>Impact: ₱{forecast.economicImpact}B</div>
+                                  <div>Impact: ${forecast.economicImpact}B</div>
                                 </div>
                               </div>
                             </div>
@@ -2756,7 +2756,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
 
                                     {/* Updated Metric Box 2: Economic Impact with breakdown */}
                                     <div className="text-center p-4 rounded-xl border border-orange-500/50 bg-orange-500/10 shadow-lg">
-                                        <div className="text-3xl font-extrabold text-orange-600 mb-1">₱78.9B</div>
+                                        <div className="text-3xl font-extrabold text-orange-600 mb-1">$78.9B</div>
                                         <div className="text-sm font-semibold text-orange-500">Projected Economic Impact</div>
                                         <div className="text-xs text-muted-foreground mt-1 font-medium">
                                             (Worst case scenario: 55% Agriculture loss, 30% Industrial impact, 15% utilities)
