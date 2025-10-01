@@ -2411,7 +2411,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                           </div>
                           <div className="flex items-center gap-2">
                             <Progress value={area.soilMoisture} className="flex-1 h-2" />
-                            <span className="text-xs text-muted-foreground w-16">${area.economicImpact}B</span>
+                            <span className="text-xs text-muted-foreground w-16">${area.economicImpact}K</span>
                           </div>
                         </div>
                       ))}
@@ -2438,7 +2438,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                         <Progress value={area.waterReserves} className="h-2 mb-2" />
                         <div className="grid grid-cols-2 gap-2 text-xs text-muted-foreground">
                           <div>Demand: {area.waterDemand}ML/day</div>
-                          <div>Population: {(area.population / 1000000).toFixed(1)}M</div>
+                          <div>Population: {area.population}</div>
                         </div>
                       </div>
                     ))}
@@ -2458,7 +2458,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                   <div className="space-y-3">
                     <div className="text-center p-4 bg-muted/30 rounded">
                       <div className="text-2xl font-bold text-red-500">
-                        ${currentDroughtData.reduce((sum, area) => sum + area.economicImpact, 0).toFixed(1)}B
+                        ${currentDroughtData.reduce((sum, area) => sum + area.economicImpact, 0).toFixed(1)}K
                       </div>
                       <div className="text-sm text-muted-foreground">Total Economic Impact</div>
                     </div>
@@ -2470,7 +2470,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                           <div key={area.id} className="flex items-center justify-between text-sm">
                             <span>{area.name}</span>
                             <div className="flex items-center gap-2">
-                              <span className="font-medium">${area.economicImpact}B</span>
+                              <span className="font-medium">${area.economicImpact}K</span>
                               <div className="w-16 h-2 bg-muted rounded">
                                 <div
                                   className="h-full bg-red-500 rounded"
