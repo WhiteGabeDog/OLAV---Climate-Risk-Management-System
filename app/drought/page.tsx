@@ -61,11 +61,11 @@ const droughtData = [
     recommendation: "Monitor water reserves closely",
     waterReserves: 78,
     agriculturalImpact: "low",
-    population: 13000000,
+    population: 1300,
     waterDemand: 4200,
     coordinates: { lat: 14.5995, lng: 120.9842 },
     economicImpact: 2.5, // in billion PHP
-    vulnerablePopulation: 850000,
+    vulnerablePopulation: 85,
     waterSources: ["Angat Dam", "La Mesa Dam", "Ipo Dam"],
     emergencyContacts: [
       { name: "MMDA Emergency", phone: "136" },
@@ -97,12 +97,12 @@ const droughtData = [
       vegetationStress: 65, // New: Vegetation stress (ความเครียดพืช)
     },
     demographics: {
-      urbanPopulation: 11500000,
-      ruralPopulation: 1500000,
-      elderlyPopulation: 1300000,
-      childrenUnder5: 650000,
-      householdsWithoutPipedWater: 125000,
-      agricultureDependentJobs: 85000,
+      urbanPopulation: 1150,
+      ruralPopulation: 150,
+      elderlyPopulation: 100,
+      childrenUnder5: 60,
+      householdsWithoutPipedWater: 1000,
+      agricultureDependentJobs: 500,
     },
     economicSectors: {
       agriculture: 0.8, // billion PHP
@@ -135,11 +135,11 @@ const droughtData = [
     recommendation: "Implement water conservation measures",
     waterReserves: 52,
     agriculturalImpact: "moderate",
-    population: 3382193,
+    population: 700,
     waterDemand: 1850,
     coordinates: { lat: 14.2691, lng: 121.1947 },
     economicImpact: 4.2,
-    vulnerablePopulation: 520000,
+    vulnerablePopulation: 52,
     waterSources: ["Laguna Lake", "Caliraya Lake", "Lumot Lake"],
     emergencyContacts: [
       { name: "Provincial Disaster Office", phone: "(049) 536-6644" },
@@ -171,12 +171,12 @@ const droughtData = [
       vegetationStress: 75, // New: Vegetation stress (ความเครียดพืช)
     },
     demographics: {
-      urbanPopulation: 1800000,
-      ruralPopulation: 1582193,
-      elderlyPopulation: 340000,
-      childrenUnder5: 170000,
-      householdsWithoutPipedWater: 85000,
-      agricultureDependentJobs: 450000,
+      urbanPopulation: 180,
+      ruralPopulation: 100,
+      elderlyPopulation: 25,
+      childrenUnder5: 17,
+      householdsWithoutPipedWater: 200,
+      agricultureDependentJobs: 65,
     },
     economicSectors: {
       agriculture: 2.8,
@@ -209,11 +209,11 @@ const droughtData = [
     recommendation: "Continue regular monitoring",
     waterReserves: 89,
     agriculturalImpact: "none",
-    population: 4344829,
+    population: 438,
     waterDemand: 2100,
     coordinates: { lat: 14.4791, lng: 120.897 },
     economicImpact: 0.8,
-    vulnerablePopulation: 125000,
+    vulnerablePopulation: 12,
     waterSources: ["Ternate River", "Maragondon River", "Cañas River"],
     emergencyContacts: [
       { name: "Provincial Emergency", phone: "(046) 481-1033" },
@@ -245,12 +245,12 @@ const droughtData = [
       vegetationStress: 35, // New: Vegetation stress (ความเครียดพืช)
     },
     demographics: {
-      urbanPopulation: 2800000,
-      ruralPopulation: 1544829,
-      elderlyPopulation: 435000,
-      childrenUnder5: 220000,
-      householdsWithoutPipedWater: 35000,
-      agricultureDependentJobs: 280000,
+      urbanPopulation: 280,
+      ruralPopulation: 154,
+      elderlyPopulation: 50,
+      childrenUnder5: 22,
+      householdsWithoutPipedWater: 250,
+      agricultureDependentJobs: 100,
     },
     economicSectors: {
       agriculture: 0.5,
@@ -283,11 +283,11 @@ const droughtData = [
     recommendation: "Activate emergency water distribution",
     waterReserves: 28,
     agriculturalImpact: "severe",
-    population: 3330143,
+    population: 333,
     waterDemand: 1650,
     coordinates: { lat: 14.6037, lng: 121.3084 },
     economicImpact: 8.5,
-    vulnerablePopulation: 980000,
+    vulnerablePopulation: 32,
     waterSources: ["Wawa Dam", "Kaliwa Dam", "Kanan River"],
     emergencyContacts: [
       { name: "Emergency Response", phone: "(02) 8647-3877" },
@@ -319,12 +319,12 @@ const droughtData = [
       vegetationStress: 85, // New: Vegetation stress (ความเครียดพืช)
     },
     demographics: {
-      urbanPopulation: 2100000,
-      ruralPopulation: 1230143,
-      elderlyPopulation: 330000,
-      childrenUnder5: 165000,
-      householdsWithoutPipedWater: 180000,
-      agricultureDependentJobs: 320000,
+      urbanPopulation: 210,
+      ruralPopulation: 123,
+      elderlyPopulation: 20,
+      childrenUnder5: 16,
+      householdsWithoutPipedWater: 18,
+      agricultureDependentJobs: 32,
     },
     economicSectors: {
       agriculture: 5.2,
@@ -414,7 +414,7 @@ const waterManagementActions = [
     priority: "high",
     resources: "12 water trucks deployed",
     startDate: "2024-05-15",
-    estimatedCost: "$2.5M",
+    estimatedCost: "$2.5K",
     beneficiaries: 45000,
     progress: 75,
     coordinator: "Engr. Maria Santos",
@@ -428,7 +428,7 @@ const waterManagementActions = [
     priority: "medium",
     resources: "Drought-resistant seeds distribution",
     startDate: "2024-05-20",
-    estimatedCost: "$1.8M",
+    estimatedCost: "$1.8K",
     beneficiaries: 12500,
     progress: 25,
     coordinator: "Dr. Juan Dela Cruz",
@@ -442,7 +442,7 @@ const waterManagementActions = [
     priority: "low",
     resources: "Public awareness program",
     startDate: "2024-05-10",
-    estimatedCost: "$800K",
+    estimatedCost: "$8K",
     beneficiaries: 2500000,
     progress: 60,
     coordinator: "Ms. Ana Reyes",
@@ -456,7 +456,7 @@ const waterManagementActions = [
     priority: "high",
     resources: "5 drilling rigs, geological survey",
     startDate: "2024-05-25",
-    estimatedCost: "$15M",
+    estimatedCost: "$15K",
     beneficiaries: 85000,
     progress: 10,
     coordinator: "Engr. Roberto Cruz",
@@ -755,7 +755,7 @@ const reservoirLevelData = [
       "Water Reserves (%)",
       "Population",
       "Vulnerable Population",
-      "Economic Impact ($B)",
+      "Economic Impact ($K)",
       "Agricultural Impact",
       "Days to Risk",
       "Humidity (%)",
@@ -822,10 +822,10 @@ const reservoirLevelData = [
       "Children Under 5",
       "Households Without Piped Water",
       "Agriculture Dependent Jobs",
-      "Economic Impact ($B)",
-      "Agriculture Sector Impact ($B)",
-      "Manufacturing Sector Impact ($B)",
-      "Services Sector Impact ($B)",
+      "Economic Impact ($K)",
+      "Agriculture Sector Impact ($K)",
+      "Manufacturing Sector Impact ($K)",
+      "Services Sector Impact ($K)",
       "Agricultural Impact Level",
       "Days to Risk Threshold",
       "Water Demand (ML/day)",
@@ -929,10 +929,10 @@ POPULATION DATA:
 - Children Under 5: ${area.demographics.childrenUnder5.toLocaleString()}
 
 ECONOMIC IMPACT:
-- Total Economic Impact: $${area.economicImpact}B
-- Agriculture Sector: $${area.economicSectors.agriculture}B
-- Manufacturing Sector: $${area.economicSectors.manufacturing}B
-- Services Sector: $${area.economicSectors.services}B
+- Total Economic Impact: $${area.economicImpact}K
+- Agriculture Sector: $${area.economicSectors.agriculture}K
+- Manufacturing Sector: $${area.economicSectors.manufacturing}K
+- Services Sector: $${area.economicSectors.services}K
 
 ENVIRONMENTAL CONDITIONS:
 - Humidity: ${area.environmentalData.humidity}%
@@ -1112,15 +1112,6 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                     <rect width="100%" height="100%" fill="url(#grid)" />
                 </svg>
 
-                {/* Compass */}
-                <div className="absolute top-4 right-4 bg-card/90 backdrop-blur-sm rounded-full p-2 border border-border shadow-lg">
-                    <div className="w-8 h-8 relative text-center">
-                    <div className="absolute inset-0 flex items-center justify-center text-sm font-bold text-foreground">
-                        N
-                    </div>
-                    <div className="absolute top-0 left-1/2 w-0.5 h-3 bg-red-500 transform -translate-x-0.5"></div>
-                    </div>
-                </div>
             </div>
                       {/* Geographic Map Visualization */}
                       <div className="relative w-full h-full bg-gradient-to-br from-muted/30 to-muted/10">
@@ -1150,7 +1141,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                                   {viewMode === "risk" && `${area.soilMoisture}%`}
                                   {viewMode === "water" && `${area.waterReserves}%`}
                                   {viewMode === "agriculture" && area.agriculturalImpact}
-                                  {viewMode === "economic" && `$${area.economicImpact}B`}
+                                  {viewMode === "economic" && `$${area.economicImpact}K`}
                                 </div>
                               </div>
                             </div>
@@ -1230,7 +1221,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                         {viewMode === "risk" && "Drought Risk Levels"}
                         {viewMode === "water" && "Water Reserve Status"}
                         {viewMode === "agriculture" && "Agricultural Impact"}
-                        {viewMode === "economic" && "Economic Impact ($B)"}
+                        {viewMode === "economic" && "Economic Impact ($K)"}
                       </h4>
                       <div className="space-y-1">
                         {viewMode === "risk" &&
@@ -1280,10 +1271,10 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
 
                         {viewMode === "economic" &&
                           [
-                            { level: "Low", color: "bg-green-500", range: "< $2B" },
-                            { level: "Moderate", color: "bg-yellow-500", range: "$2B - $5B" },
-                            { level: "High", color: "bg-orange-500", range: "$5B - $10B" },
-                            { level: "Severe", color: "bg-red-500", range: "> $10B" },
+                            { level: "Low", color: "bg-green-500", range: "< $2K" },
+                            { level: "Moderate", color: "bg-yellow-500", range: "$2K - $5K" },
+                            { level: "High", color: "bg-orange-500", range: "$5K - $10K" },
+                            { level: "Severe", color: "bg-red-500", range: "> $10K" },
                           ].map((item) => (
                             <div key={item.level} className="flex items-center gap-2 text-xs">
                               <div className={`w-3 h-3 rounded ${item.color}`} />
@@ -1318,9 +1309,9 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                                     : `Risk in ${area.daysToRisk} days`}
                                 </span>
                                 <span>•</span>
-                                <span>Pop: {(area.population / 1000000).toFixed(1)}M</span>
+                                <span>Pop: {area.population}</span>
                                 <span>•</span>
-                                <span>Vulnerable: {(area.vulnerablePopulation / 1000).toFixed(0)}K</span>
+                                <span>Vulnerable: {area.vulnerablePopulation}</span>
                               </div>
                             </div>
                           </div>
@@ -1345,7 +1336,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                             <div className="text-xs text-muted-foreground capitalize flex items-center gap-2">
                               <span>{area.vegStress}</span>
                               <span>•</span>
-                              <span>${area.economicImpact}B</span>
+                              <span>${area.economicImpact}K</span>
                             </div>
                           </div>
                         </div>
@@ -1404,11 +1395,11 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                           <div className="grid grid-cols-2 gap-2 text-xs">
                             <div className="flex items-center gap-2">
                               <Users className="h-3 w-3 text-blue-500" />
-                              <span>Pop: {(selectedRegion.population / 1000000).toFixed(1)}M</span>
+                              <span>Pop: {selectedRegion.population}</span>
                             </div>
                             <div className="flex items-center gap-2">
                               <AlertTriangle className="h-3 w-3 text-orange-500" />
-                              <span>Vulnerable: {(selectedRegion.vulnerablePopulation / 1000).toFixed(0)}K</span>
+                              <span>Vulnerable: {selectedRegion.vulnerablePopulation}</span>
                             </div>
                             <div className="flex items-center gap-2">
                               <Sprout className="h-3 w-3 text-green-500" />
@@ -1416,7 +1407,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                             </div>
                             <div className="flex items-center gap-2">
                               <Target className="h-3 w-3 text-red-500" />
-                              <span>Economic: ${selectedRegion.economicImpact}B</span>
+                              <span>Economic: ${selectedRegion.economicImpact}K</span>
                             </div>
                           </div>
 
@@ -1566,13 +1557,13 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                           <div className="grid grid-cols-2 gap-3">
                             <div className="text-center p-2 bg-blue-500/10 rounded">
                               <div className="text-lg font-bold text-blue-500">
-                                {(selectedRegion.demographics.urbanPopulation / 1000000).toFixed(1)}M
+                                {selectedRegion.demographics.urbanPopulation}
                               </div>
                               <div className="text-xs text-muted-foreground">Urban Population</div>
                             </div>
                             <div className="text-center p-2 bg-green-500/10 rounded">
                               <div className="text-lg font-bold text-green-500">
-                                {(selectedRegion.demographics.ruralPopulation / 1000000).toFixed(1)}M
+                                {selectedRegion.demographics.ruralPopulation}
                               </div>
                               <div className="text-xs text-muted-foreground">Rural Population</div>
                             </div>
@@ -1584,34 +1575,34 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                               <div className="flex items-center gap-2">
                                 <Users className="h-3 w-3 text-orange-500" />
                                 <span>
-                                  Elderly: {(selectedRegion.demographics.elderlyPopulation / 1000).toFixed(0)}K
+                                  Elderly: {selectedRegion.demographics.elderlyPopulation}
                                 </span>
                               </div>
                               <div className="flex items-center gap-2">
                                 <Users className="h-3 w-3 text-pink-500" />
                                 <span>
                                   {"Children <5: "}
-                                  {(selectedRegion.demographics.childrenUnder5 / 1000).toFixed(0)}K
+                                  {selectedRegion.demographics.childrenUnder5}
                                 </span>
                               </div>
                               <div className="flex items-center gap-2">
                                 <Home className="h-3 w-3 text-red-500" />
                                 <span>
                                   No Piped Water:{" "}
-                                  {(selectedRegion.demographics.householdsWithoutPipedWater / 1000).toFixed(0)}K
+                                  {selectedRegion.demographics.householdsWithoutPipedWater}
                                 </span>
                               </div>
                               <div className="flex items-center gap-2">
                                 <Sprout className="h-3 w-3 text-green-500" />
                                 <span>
-                                  Agri Jobs: {(selectedRegion.demographics.agricultureDependentJobs / 1000).toFixed(0)}K
+                                  Agri Jobs: {selectedRegion.demographics.agricultureDependentJobs}
                                 </span>
                               </div>
                             </div>
                           </div>
 
                           <div className="space-y-2">
-                            <h5 className="text-xs font-medium">Economic Sectors Impact ($B)</h5>
+                            <h5 className="text-xs font-medium">Economic Sectors Impact ($K)</h5>
                             <div className="space-y-1">
                               {Object.entries(selectedRegion.economicSectors).map(([sector, impact]) => (
                                 <div key={sector} className="flex items-center justify-between">
@@ -1623,7 +1614,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                                         style={{ width: `${(impact / 6) * 100}%` }}
                                       />
                                     </div>
-                                    <span className="text-xs font-medium">${impact}B</span>
+                                    <span className="text-xs font-medium">${impact}K</span>
                                   </div>
                                 </div>
                               ))}
@@ -1927,7 +1918,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                                           </CardHeader>
                                           <CardContent>
                                             <div className="flex justify-between items-center">
-                                                <p className="text-4xl font-bold text-red-500">${totalEconomicImpact}B</p>
+                                                <p className="text-4xl font-bold text-red-500">${totalEconomicImpact}K</p>
                                                 <Target className="h-10 w-10 text-orange-500 p-1 bg-orange-100 rounded-full" />
                                             </div>
                                             <div className="text-xs text-gray-400 mt-3">Losses Q3 YTD</div>
@@ -2228,37 +2219,37 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                           </TableCell>
                           <TableCell>
                             <div className="text-sm">
-                              <div className="font-medium">{(area.population / 1000000).toFixed(1)}M</div>
+                              <div className="font-medium">{area.population}</div>
                               <div className="text-xs text-muted-foreground">
-                                Urban: {(area.demographics.urbanPopulation / 1000000).toFixed(1)}M
+                                Urban: {area.demographics.urbanPopulation}
                               </div>
                               <div className="text-xs text-muted-foreground">
-                                Rural: {(area.demographics.ruralPopulation / 1000000).toFixed(1)}M
+                                Rural: {area.demographics.ruralPopulation}
                               </div>
                             </div>
                           </TableCell>
                           <TableCell>
                             <div className="text-sm">
                               <div className="font-medium text-orange-500">
-                                {(area.vulnerablePopulation / 1000).toFixed(0)}K
+                                {area.vulnerablePopulation}
                               </div>
                               <div className="text-xs text-muted-foreground">
-                                Elderly: {(area.demographics.elderlyPopulation / 1000).toFixed(0)}K
+                                Elderly: {area.demographics.elderlyPopulation}
                               </div>
                               <div className="text-xs text-muted-foreground">
                                 {"Children <5: "}
-                                {(area.demographics.childrenUnder5 / 1000).toFixed(0)}K
+                                {area.demographics.childrenUnder}
                               </div>
                             </div>
                           </TableCell>
                           <TableCell>
                             <div className="text-sm">
-                              <div className="font-medium text-red-500">${area.economicImpact}B</div>
+                              <div className="font-medium text-red-500">${area.economicImpact}K</div>
                               <div className="text-xs text-muted-foreground">
-                                Agri: ${area.economicSectors.agriculture}B
+                                Agri: ${area.economicSectors.agriculture}K
                               </div>
                               <div className="text-xs text-muted-foreground">
-                                Mfg: ${area.economicSectors.manufacturing}B
+                                Mfg: ${area.economicSectors.manufacturing}K
                               </div>
                             </div>
                           </TableCell>
@@ -2267,7 +2258,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
                               {area.agriculturalImpact.toUpperCase()}
                             </Badge>
                             <div className="text-xs text-muted-foreground mt-1">
-                              Jobs: {(area.demographics.agricultureDependentJobs / 1000).toFixed(0)}K
+                              Jobs: {area.demographics.agricultureDependentJobs}
                             </div>
                           </TableCell>
                           <TableCell>
@@ -2722,7 +2713,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
 
                                 <div className="grid grid-cols-2 gap-2 text-xs text-muted-foreground">
                                   <div>Water: {forecast.waterReserves}%</div>
-                                  <div>Impact: ${forecast.economicImpact}B</div>
+                                  <div>Impact: ${forecast.economicImpact}K</div>
                                 </div>
                               </div>
                             </div>
@@ -2756,7 +2747,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
 
                                     {/* Updated Metric Box 2: Economic Impact with breakdown */}
                                     <div className="text-center p-4 rounded-xl border border-orange-500/50 bg-orange-500/10 shadow-lg">
-                                        <div className="text-3xl font-extrabold text-orange-600 mb-1">$78.9B</div>
+                                        <div className="text-3xl font-extrabold text-orange-600 mb-1">$7K</div>
                                         <div className="text-sm font-semibold text-orange-500">Projected Economic Impact</div>
                                         <div className="text-xs text-muted-foreground mt-1 font-medium">
                                             (Worst case scenario: 55% Agriculture loss, 30% Industrial impact, 15% utilities)
@@ -2765,7 +2756,7 @@ const riskCounts = week2Risks.reduce((acc, risk) => {
 
                                     {/* Updated Metric Box 3: People at Risk with explanation */}
                                     <div className="text-center p-4 rounded-xl border border-blue-500/50 bg-blue-500/10 shadow-lg">
-                                        <div className="text-3xl font-extrabold text-blue-600 mb-1">2.5M</div>
+                                        <div className="text-3xl font-extrabold text-blue-600 mb-1">2.5K</div>
                                         <div className="text-sm font-semibold text-blue-500">People at Risk</div>
                                         <div className="text-xs text-muted-foreground mt-1 font-medium">
                                             (Vulnerable population residing in the 3 highest risk provinces, requiring aid mobilization)
